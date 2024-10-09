@@ -20,7 +20,7 @@ public class CameraFollow : MonoBehaviour
     
     private void LateUpdate()
     {
-        if (shouldFollow)
+        if (shouldFollow && target != null)
         {
             float t = 1 - Mathf.Pow(0.01f, Time.deltaTime);
             transform.position = Vector3.Lerp(transform.position, target.position + offset, t);
