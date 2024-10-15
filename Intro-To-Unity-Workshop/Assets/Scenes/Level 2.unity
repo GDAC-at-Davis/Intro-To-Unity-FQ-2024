@@ -169,8 +169,8 @@ GameObject:
   - component: {fileID: 391766941}
   - component: {fileID: 391766940}
   - component: {fileID: 391766939}
-  - component: {fileID: 391766943}
   - component: {fileID: 391766944}
+  - component: {fileID: 391766943}
   m_Layer: 0
   m_Name: Ouchie
   m_TagString: Untagged

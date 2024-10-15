@@ -7,7 +7,7 @@ using UnityEngine;
 /// </summary>
 public class Rotater : MonoBehaviour
 {
-    [SerializeField]
+    [SerializeField, Tooltip("The rotation speed in degrees per second.")]
     private Vector3 rotation;
     
     private void FixedUpdate()

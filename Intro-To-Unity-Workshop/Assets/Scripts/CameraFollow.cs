@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    [SerializeField]
+    [SerializeField, Tooltip("The gameobject to follow.")]
     private Transform target;
 
-    [SerializeField]
+    [SerializeField, Tooltip("Should the camera follow the target?")]
     private bool shouldFollow;
     
     private Vector3 offset;

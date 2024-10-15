@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlaySoundOnCollision : MonoBehaviour
 {
-    [SerializeField]
+    [SerializeField, Tooltip("The sound to play on collision.")]
     private AudioClip sound;
 
     private void OnCollisionEnter(Collision collision)

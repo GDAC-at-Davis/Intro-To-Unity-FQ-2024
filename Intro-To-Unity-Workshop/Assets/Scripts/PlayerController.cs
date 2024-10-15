@@ -8,13 +8,13 @@ public class PlayerController : MonoBehaviour
 {
     [Header("Movement Settings")]
 
-    [SerializeField]
+    [SerializeField, Tooltip("How fast does the player move horizontally?")]
     private float moveSpeed;
 
-    [SerializeField]
+    [SerializeField, Tooltip("How high can the player jump, in Units?")]
     private float jumpHeight;
 
-    [SerializeField]
+    [SerializeField, Tooltip("What is the gravity acceleration?")]
     private float gravity;
     
     private CharacterController characterController;
