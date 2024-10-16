@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
@@ -11,8 +12,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField, Tooltip("How fast does the player move horizontally?")]
     private float moveSpeed;
 
-    [SerializeField, Tooltip("How high can the player jump, in Units?")]
-    private float jumpHeight;
+    [SerializeField, Tooltip("How much velocity does the player jump with?")]
+    private float _jumpVelocity;
 
     [SerializeField, Tooltip("What is the gravity acceleration?")]
     private float gravity;
@@ -59,7 +60,7 @@ public class PlayerController : MonoBehaviour
         // Vertical movement
         if (jumpPressed && characterController.isGrounded)
         {
-            yVelocity = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            yVelocity = _jumpVelocity;
         }
         else if (characterController.isGrounded)
         {

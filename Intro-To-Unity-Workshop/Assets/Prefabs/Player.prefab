@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  jumpHeight: 2
+  _jumpVelocity: 9
   gravity: -20
 --- !u!143 &702400367702941536
 CharacterController:
